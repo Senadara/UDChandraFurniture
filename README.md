@@ -7,3 +7,7 @@ silahkan patuhi aturannya:
    - misalkan sebagai contoh nimnya **123456789** dan namanya **fwp**, maka jalankan perintah: **git branch 123456789_fwp main**    
    - kemudian jalankan perintah: **git checkout 123456789_fwp**
    - selanjutnya bisa pindahkan project masing-masing (folder nim_nama_mhs hanya punyamu saja) yang lama atau dari folder sebelumnya (fidiwputro.github.io) ke folder webprog2023 (ingat, beserta foldernya, jangan cuma isinya yg dipindah kesini, biar tidak nyampur).
+   - kemudian lakukan perintah: **git add .** untuk menambahkan file baru ke git
+   - selanjutnya jalankan perintah: **git commit -m "tugas web"**
+   - kemudian perintah: **git push**
+   - kalau ada error, silahkan jalankan perintah: **git pull** kemudian lakukan lagi **git push**
