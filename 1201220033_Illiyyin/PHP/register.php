@@ -1,3 +1,26 @@
+<?php
+include("../Controller/registerController.php");
+
+
+if (isset($_POST['full_name']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['email']) && isset($_POST['phone_number'])) {
+    $full_name = $_POST['full_name'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+    $phone_number = $_POST['phone_number'];
+
+    $registerController = new RegisterController($full_name, $username, $password, $email, $phone_number);
+    $registerController->register($full_name, $username, $password, $email, $phone_number);
+    echo "<pre>";
+    var_dump($registerController);
+    echo "</pre>";
+} else {
+    // Handle the case where the $_POST variables are not set 
+    echo "Please fill all the fields.";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +35,7 @@
     <div class="container">
         <div class="register">
             <h1>Registration</h1>
-            <form class="form-group" action="login.php" method="post">
+            <form class="form-group" action="register.php" method="post">
                 <label for="">Full Name</label>
                 <input id="full_name" type="text" name="full_name" placeholder="Full Name">
                 <label for="">Username</label>
@@ -27,7 +50,7 @@
             </form>
         </div>
     </div>
-    <script src="../JS/register.js"></script>
+    <!-- <script src="../JS/register.js"></script> -->
 </body>
 
 </html>
