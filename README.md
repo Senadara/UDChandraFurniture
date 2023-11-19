@@ -9,5 +9,5 @@ silahkan patuhi aturannya:
    - selanjutnya bisa pindahkan project masing-masing (folder nim_nama_mhs hanya punyamu saja) yang lama atau dari folder sebelumnya (fidiwputro.github.io) ke folder webprog2023 (ingat, beserta foldernya, jangan cuma isinya yg dipindah kesini, biar tidak nyampur).
    - kemudian lakukan perintah: **git add .** untuk menambahkan file baru ke git
    - selanjutnya jalankan perintah: **git commit -m "tugas web"**
-   - kemudian perintah: **git push**
+   - kemudian perintah: **git push --set-upstream origin 19870004_fwp** disesuaikan dengan nama branch yang telah dibuat sebelumnya
    - kalau ada error, silahkan jalankan perintah: **git pull** kemudian lakukan lagi **git push**
