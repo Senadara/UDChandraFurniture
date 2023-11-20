@@ -1,0 +1,345 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.Pendaki{
+    width: 1250px;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #364f6b;
+}
+
+.menu{
+    float: right;
+}
+
+nav{
+    width: 100;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 3;
+    border-bottom: 3px solid #364f6b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 14px 0px 14px;
+    text-decoration: none;
+}
+nav ul li a :hover {
+    text-decoration: underline;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 50xp;
+}
+
+.kolom .deskripsi {
+    font-size: 20xp;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+}
+
+h2{
+    font-family: 'comic sans ms';
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tabel-biru {
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15xp 20xp 15xp 20xp;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+p{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.Login {
+    width: 420px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #084cf8;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+
+.Login h1 {
+    font-size: 38px;
+    text-align:center;
+    position:relative ;
+    color: darkblue;
+
+}
+.Login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 3px solid rgb(0, 2, 58);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #080808;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input ::placeholder {
+    color: #364f6b;
+}
+
+.input-box i {
+    position :absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.Login .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+    color: #FFF;
+}
+
+.remember-forgot label input {
+    accent-color: #0808f2;
+    margin-right: 3px;
+    margin-top: 40px;
+    display: inline-block;
+}
+.remember-forgot a{
+    color: #f60606;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.remember-forgot a:hover {
+text-decoration: underline;
+}
+.Login .btn {
+    width: 100%;
+    height: 45px;
+    background: #0247f6;
+    margin-top: 30px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.Login .registrasi-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+
+.registrasi-linkk p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.registrasi-link p a:hover {
+    text-decoration: underline;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background: url('./foto&video/phu-chi-fa-mist-sunrise-chiang-rai-province-thailand.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Login {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255 .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.Login h1 {
+    font-size: 38px;
+    text-align:center;
+    color: darkblue;
+
+}
+.Login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 3px solid rgb(0, 2, 58);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #FFF;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input ::placeholder {
+    color: #FFF;
+}
+
+.input-box i {
+    position :absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.Login .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: #FFF;
+}
+
+.remember-forgot label input {
+    accent-color: #0808f2;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #f60606;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.remember-forgot a:hover {
+text-decoration: underline;
+}
+.Login .btn {
+    width: 100%;
+    height: 45px;
+    background: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.Login .registrasi-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+
+.registrasi-linkk p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrasi-link p a:hover {
+    text-decoration: underline;
+}
