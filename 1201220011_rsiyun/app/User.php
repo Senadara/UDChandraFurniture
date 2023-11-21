@@ -1,33 +1,37 @@
 <?php
 class User{
     private $username;
-    private $password;
-    private $confirm;
+    private $namaLengkap;
+    private $email;
+    private $alamat;
+    private $kota;
+    private $provinsi;
+    private $negara;
     public function __construct() { 
         $arguments = func_get_args(); 
         $numberOfArguments = func_num_args(); 
-  
+        var_dump($numberOfArguments);
         if (method_exists($this, $function =  'ConstructFor'.$numberOfArguments)) { 
             call_user_func_array(array($this, $function), $arguments); 
         } 
     } 
-    public function ConstructForLogin($nama, $password){
+    public function ConstructFor2($nama, $namaLengkap){
         $this->username = $nama;
-        $this->password = $password;
+        $this->$namaLengkap = $namaLengkap;
     }
-    public function ConstructForRegister($nama, $password, $confirmPassword){
+    public function ConstructFor7($nama, $email,$namaLengkap, $alamat, $kota, $provinsi, $negara){
         $this->username = $nama;
-        $this->password = $password;
-        $this->confirm = $confirmPassword;
+        $this->namaLengkap = $namaLengkap;
+        $this->email = $email;
+        $this->alamat = $alamat;
+        $this->kota = $kota;
+        $this->provinsi = $provinsi;
+        $this->negara = $negara;
     }
-    public function getName() {
-        return $this->username;
-    }
-    public function setName($set) {
-        $this->username = $set;
-    }
-    public function getPassword() {
-        return $this->password;
+    public function getUser(){
+        $data = array("username"=>$this->username, "email"=> $this->email, "namaLengkap"=>$this->namaLengkap, "alamat"=>$this->alamat,
+        "kota"=>$this->kota, "provinsi"=>$this->provinsi, "negara"=>$this->negara);
+        return $data;
     }
 }
 

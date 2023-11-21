@@ -81,10 +81,9 @@ function RegisterForm(){
             }else{
                 valid = !hasValue(form.elements[key], `${key} harus diisi`) ? false : valid
             }
-            // console.log(key)
         })
         if (valid) {
-            
+            event.currentTarget.submit()
         }
     })
 }
