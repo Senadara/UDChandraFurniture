@@ -1,0 +1,32 @@
+table {
+  margin: auto;
+}
+
+.styletabel {
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.styletabel h1 {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.styletabel a {
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.tabel,
+th,
+td {
+  color: white;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid white;
+  padding: 8px;
+}

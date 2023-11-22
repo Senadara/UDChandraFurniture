@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinjam Buku Adib</title>
+    <link rel="stylesheet" href="stylenavbar.css" />
+    <link rel="stylesheet" href="stylecontent.css" />
+    <link rel="stylesheet" href="styletable.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="img/logo.png" alt="logo" />
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="dashboard.html#about">About Us</a></li>
+        <li><a href="lihatbuku.html">Lihat Buku</a></li>
+        <li><a href="lihatanggota.html">Lihat Anggota</a></li>
+        <li><a href="peminjaman.html">Peminjaman</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+    <section class="lihatbuku" id="lihatbuku">
+      <div class="content-lihatbuku styletabel">
+        <a href="tambahbuku.html">Tambah</a>
+        <h1>Lihat Buku</h1>
+
+        <table class="tabel">
+          <tr>
+            <th>Id Buku</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Kategori</th>
+            <th>Deskripsi</th>
+            <th>Stok</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>filosofi teras</td>
+            <td>Henry Manampiring</td>
+            <td>filsafat</td>
+            <td>
+              filsafat Yunani-Romawi kuno yang bisa membantu kita <br />
+              mengatasi emosi negatif dan menghasilkan mental yang <br />
+              tangguh dalam menghadapi naik-turunnya kehidupan.
+            </td>
+            <td>5</td>
+            <td>Tersedia</td>
+            <td><a href="updatebuku.html">Edit </a> | Delete</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>automic habits</td>
+            <td>james clear</td>
+            <td>self improvement</td>
+            <td>
+              mengulas tentang bagaimana melakukan suatu perubahan<br />
+              kecil yang signifikan dalam hidup kita melalui pembentukan<br />
+              kebiasaan yang baik.
+            </td>
+            <td>5</td>
+            <td>Tersedia</td>
+            <td>Edit | Delete</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>The 48 Laws of Power</td>
+            <td>Robert Greene</td>
+            <td>Social Psychology</td>
+            <td>
+              Buku ini merupakan panduan tentang bagaimana mendapatkan dan <br />
+              mempertahankan kekuasaan dalam berbagai situasi. Robert Greene<br />
+              menawarkan 48 hukum atau prinsip yang dapat diterapkan oleh<br />
+              individu untuk mencapai keberhasilan dan memahami dinamika<br />
+              kekuasaan dalam hubungan sosial, profesional, dan politik.
+            </td>
+            <td>5</td>
+            <td>Tersedia</td>
+            <td>Edit | Delete</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
