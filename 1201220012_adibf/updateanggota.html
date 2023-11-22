@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinjam Buku Adib</title>
+    <link rel="stylesheet" href="stylenavbar.css" />
+    <link rel="stylesheet" href="stylecontent.css" />
+    <link rel="stylesheet" href="styleform.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="img/logo.png" alt="logo" />
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="dashboard.html#about">About Us</a></li>
+        <li><a href="lihatbuku.html">Lihat Buku</a></li>
+        <li><a href="lihatanggota.html">Lihat Anggota</a></li>
+        <li><a href="peminjaman.html">Peminjaman</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+    <section class="updateanggota" id="updateanggota">
+      <div class="content-updateanggota">
+        <div class="form-updateanggota">
+          <h1>Update Anggota</h1>
+          <form name="form" id="form">
+            <div class="label">
+              <label for="id">Id :</label>
+            </div>
+            <div class="input">
+              <input type="text" id="id" name="id" disabled value="3" />
+            </div>
+            <div class="label">
+              <label for="nama_anggota">Nama Anggota</label>
+            </div>
+            <div class="input">
+              <input type="text" id="nama_anggota" name="nama_anggota" disabled value="Deniz" />
+            </div>
+            <div class="label">
+              <label for="nohp">No hp</label>
+            </div>
+            <div class="input">
+              <input type="tel" id="nohp" name="nohp" disabled value="082124990758" />
+            </div>
+            <div class="label">
+              <label for="alamat">Alamat</label>
+            </div>
+            <div class="input">
+              <input type="text" id="alamat" name="alamat" disabled value="Surabaya" />
+            </div>
+            <div class="label">
+              <label for="isadmin">IsAdmin</label>
+            </div>
+            <div class="input">
+              <input type="number" id="isadmin" name="isadmin" disabled value="0" />
+            </div>
+            <div class="label">
+              <label for="status">Status</label>
+            </div>
+            <div class="input">
+              <select name="status" id="status">
+                <option value="active">Active</option>
+                <option value="nonactive">Non Active</option>
+              </select>
+            </div>
+            <div class="button">
+              <button type="submit" name="update" id="update" value="update">update</button>
+            </div>
+          </form>
+        </div>
+        <!-- akhir form -->
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.form-updateanggota,
+.form-peminjaman,
+.form-tambahbuku,
+.form-updatebuku {
+  background-color: black;
+  color: white;
+  height: 480px;
+  width: 600px;
+  margin-top: 26px;
+  margin: auto;
+  margin-top: 26px;
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.form-tambahbuku,
+.form-updatebuku {
+  height: 580px;
+  margin-bottom: 20px;
+}
+
+.form-updateanggota h1,
+.form-peminjaman h1,
+.form-tambahbuku h1,
+.form-updatebuku h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-updateanggota input,
+.form-peminjaman input,
+.form-tambahbuku input,
+.form-updatebuku input {
+  background-color: white;
+  width: 400px;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  height: 25px;
+}
+
+.form-updateanggota select,
+.form-tambahbuku select,
+.form-updatebuku select {
+  width: 400px;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  height: 25px;
+}
+
+.form-updateanggota button,
+.form-peminjaman button,
+.form-tambahbuku button,
+.form-updatebuku button {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+  width: 100px;
+}
+
+.form-updateanggota .label,
+.form-peminjaman .label,
+.form-tambahbuku .label,
+.form-updatebuku .label {
+  margin-left: 100px;
+}
+.form-updateanggota .input,
+.form-peminjaman .input,
+.form-tambahbuku .input,
+.form-updatebuku .input {
+  text-align: center;
+}
+
+.form-updateanggota .button,
+.form-peminjaman .button,
+.form-tambahbuku .button,
+.form-updatebuku .button {
+  text-align: center;
+}
