@@ -6,7 +6,7 @@
     color: #A5D7E8;
 }
 body{
-    background-image: url(asset/login/wallpaper.jpg);
+    background-image: url(./asset/login/wallpaper.jpg);
     background-size: 200vh;
     display: flex;
     flex-wrap: wrap;

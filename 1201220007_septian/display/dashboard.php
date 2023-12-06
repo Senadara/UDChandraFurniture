@@ -4,61 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DASHBOARD</title>
-        <link rel="stylesheet" href="displayDb.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" type="text/css"href="../style/displayDb.css" />
     </head>
     <body>
-        <div class="sidebar">
-            <div class="label">
-                <img src="asset/DIDIMO-logo-final.png" alt="" />
-                <div class="text">UD CHANDRA FURNITURE</div>
-            </div>
-            <hr />
-            <div class="menu">
-                <div>
-                    <div class="item">
-                        <img class="" src="asset/dashboard.svg" alt="" />
-                        <div class="text"><a href="#">DASHBOARD</a></div>
-                    </div>
-                    <div class="item">
-                        <img src="asset/logbook.svg" alt="" />
-                        <div class="text">
-                            <a href="logBook.html">LOGBOOK</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="asset/warehouse.svg" alt="" />
-                        <div class="text">
-                            <a href="warehouse.html">WAREHOUSE</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="asset/employee.svg" alt="" />
-                        <div class="text">
-                            <a href="presence.html">EMPLOYEE</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="asset/shipment.svg" alt="" />
-                        <div class="text">
-                            <a href="logPengiriman.html">SHIPMENT</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="logout">
-                    <div class="item">
-                        <img src="asset/logout.svg" alt="" />
-                        <div class="text"><a href="index.html">Logout</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <!-- SIDEBAR -->
+        <?php
+        include('sidebar.html')
+        ?>
+        <!-- SIDEBAR END -->       
         <main>
             <div class="topDisplay">
                 <div class="section1">
@@ -73,7 +26,7 @@
                             </div>
                         </div>
                         <div class="picture">
-                            <img src="asset/greeting.png" alt="" />
+                            <img src="../asset/greeting.png" alt="" />
                         </div>
                     </div>
                     <div class="keuangan">
@@ -156,13 +109,13 @@
                         <h3>PROFILE</h3>
                         <div class="about">
                             <div class="profileImg">
-                                <img src="asset/profile.jpg" alt="" />
+                                <img src="../asset/profile.jpg" alt="" />
                             </div>
                             <div class="desk">
                                 <h4>UD CHANDRA FURNITURE</h4>
                                 <p>Sawmill Industri</p>
                                 <div class="location">
-                                    <img src="asset/location.svg" alt="" />
+                                    <img src="../asset/location.svg" alt="" />
                                     <p>Kab.Malang Jawatimur</p>
                                 </div>
                             </div>
