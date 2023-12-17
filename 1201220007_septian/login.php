@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +16,15 @@
     <!-- <script type="text/javascript" rel="javascript" src="script.js" ></script> -->
 </head>
 <body>
+<?php if(@$_GET['pesan']!=null):?>
+    <script>alert('<?= @$_GET['pesan']?>');</script>
+<?php endif; ?>
     <div class="card">
         <div class="content1">
             <h3>WELCOME ON WEBSITE</h3>
             <h1>UD CHANDRA FURNITURE</h1>
             <br>
-            <form id="formLogin" class="login" action="controller.php" method="POST">
+            <form id="formLogin" class="login" action="login_controller.php" method="POST">
                 <label for="account">Akun :</label>
                 <input type="email" placeholder="example@gmail.com" id="account" name="account"><hr>
                 <label for="password">Password :</label>
@@ -27,7 +32,6 @@
                 <input type="submit" value="Log In" id="login" name="login">
             </form>
             <p>Belum punya akun ? <a class="daftar" href="register.html">Daftar Sekarang</a></p>
-            <p><a href="/display/dashboard.php">emergency</a></p>
         </div>
         <div class="content2">
             <img src="asset/login/Saly-12.svg" alt="">

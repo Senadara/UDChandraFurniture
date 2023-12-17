@@ -1,13 +1,8 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'udchandrafurniture';
-$username = 'root'; 
-$password = '';
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'udchandrafurniture');
+define('DB_USER', 'root'); 
+define('DB_PSWD', '');
 
-try {
-    $dbh = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-} catch (PDOException $e) {
-    die("Error: " . $e->getMessage());
-}
 ?>

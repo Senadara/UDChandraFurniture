@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,7 +10,12 @@
     <body>
         <!-- SIDEBAR -->
         <?php
-        include('sidebar.html')
+        session_start();
+        if (!isset($_SESSION['Nama']) || $_SESSION['Nama'] == null) {
+            header('Location: ../login.php?pesan= anda belum login');
+            exit();
+        }
+        include('sidebar.html');
         ?>
         <!-- SIDEBAR END -->       
         <main>
