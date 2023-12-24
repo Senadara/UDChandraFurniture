@@ -12,18 +12,18 @@ class UserAdmin{
     function __construct($idUser=null, $nama=null, $email=null, $password=null, $noHp=null){
 
         $this->database = new DbConnection();
-        if($idUser!=null && $nama!=null && $email!=null && $password!=null && $noHp!=null){
+        if($nama!=null && $email!=null && $password!=null && $noHp!=null){
             $this -> idUser = $idUser;
             $this -> nama = $nama;
             $this -> email = $email;
-            $this -> pssword = $password;
+            $this -> password = $password;
             $this -> noHp = $noHp;
         }
     }
     
 
     public function auth($email, $password){
-        $sql="SELECT * FROM useradmin WHERE Email = :email AND Password = :password";
+        $sql="SELECT * FROM employee e INNER JOIN role r ON e.idEmployee = r.idEmployee WHERE e.email = :email AND e.password = :password AND r.role = 'admin' ";
         $statement = $this->database->db->prepare($sql);
         $statement->bindparam(':email', $email, PDO::PARAM_STR);
         $statement->bindparam(':password', $password, PDO::PARAM_STR);
@@ -32,56 +32,18 @@ class UserAdmin{
         return $data;
     }
 
+    public function regis(){
+        $sql="INSERT INTO `employee` (`idEmployee`, `nama`, `email`, `password`, `telp`) VALUES (?, ?, ?, ?, ?)";
+        $statement = $this->database->db->prepare($sql);
+        return ($statement->execute([$this -> idUser, $this -> nama, $this -> email, $this -> password, $this -> noHp]));
+    }
+
+    public function tampilEmployee(){
+        $sql="SELECT * FROM employee e INNER JOIN role r ON e.idEmployee = r.idEmployee where r.role = 'employee' AND e.status = 'aktif'";
+        $statement = $this->database->db->query($sql);
+        $data = $statement->fetchAll(PDO::FETCH_ASSOC);   
+        return $data;
+    }
+
 }
 
-
-
-// function login($email, $password, $dbh)
-// {
-//     $stmt = $dbh->prepare("SELECT * FROM useradmin WHERE Email = :email AND Password = :password");
-//     $stmt->bindParam(':email', $email);
-//     $stmt->bindParam(':password', $password);
-//     $stmt->execute();
-
-//     return $stmt->fetch(PDO::FETCH_ASSOC);
-// }
-
-// function register($nama, $no, $email, $password, $dbh){
-//     $stmt = $dbh->prepare("INSERT INTO useradmin (Nama, No_Hp, Email, Password) VALUES (:nama, :telepon, :email, :password)");
-//     $stmt->bindParam(':nama', $nama);
-//     $stmt->bindParam(':telepon', $no);
-//     $stmt->bindParam(':email', $email);
-//     $stmt->bindParam(':password', $password);
-
-//     return $stmt->execute();
-// }
-
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     if (isset($_POST['login'])){
-//     $email = $_POST['account'];
-//     $password = $_POST['password'];
-
-//     $user = login($email, $password, $dbh);
-//     if ($user) {
-//         header('Location: ./display/dashboard.php');
-//         exit;
-//     } else {
-//         echo "Login gagal. Silakan cek email dan password Anda.";
-//     }
-
-//     }elseif (isset($_POST['register'])){
-//     $nama = $_POST['nama'];
-//     $no = $_POST['telepon'];
-//     $email = $_POST['account'];
-//     $password = $_POST['password'];
-
-//     $resultset = register($nama, $no, $email, $password, $dbh);
-//     if($resultset){
-//         header('Location: index.html');
-//         // exit;
-//     } else {
-//         echo "Registrasi gagal. Silakan coba lagi.";
-//     }
-// }
-// }
-?>

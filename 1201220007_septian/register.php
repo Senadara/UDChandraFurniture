@@ -14,12 +14,15 @@
     <!-- <script type="text/javascript" rel="javascript" src="script.js" ></script> -->
 </head>
 <body>
+<?php if(@$_GET['pesan']!=null):?>
+    <script>alert('<?= @$_GET['pesan']?>');</script>
+<?php endif; ?>
     <div class="card">
         <div class="content1">
             <h3>WELCOME ON WEBSITE</h3>
             <h1>UD CHANDRA FURNITURE</h1>
             <br>
-            <form id="formRegister" class="register" action="controller.php" method="POST" >
+            <form id="formRegister" class="register" action="login_controller.php" method="POST" >
                 <label for="nama">Nama : </label>
                 <input type="text" placeholder="Nama" id="nama" name="nama"><hr>
                 <label for="telepon">No Telp : </label>
@@ -28,9 +31,9 @@
                 <input type="email" placeholder="example@gmail.com" id="account" name="account"><hr>
                 <label for="password">Password :</label>
                 <input type="password" placeholder="***" id="password" name="password"><hr><br>
-                <input type="submit" value="Register" id="login" name="register">
+                <input type="submit" value="Register" id="register" name="register">
             </form>
-            <p>Sudah punya akun ? <a class="daftar" href="index.html">Masuk Sekarang</a></p>
+            <p>Sudah punya akun ? <a class="daftar" href="login.php">Masuk Sekarang</a></p>
         </div>
     </div>
 

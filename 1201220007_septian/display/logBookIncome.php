@@ -18,8 +18,8 @@
                 <p>Selamat datang di menu logbook UD Chandra Furniture</p>
             </div>
             <div class="menuLogbook">
-                <h5><a href="#">INCOME</a></h5>
-                <h5><a href="logBookOutcome.php">OUTCOME</a></h5>
+                <h5><a class="btnPage" href="#">INCOME</a></h5>
+                <h5><a class="btnPage" href="logBookOutcome.php">OUTCOME</a></h5>
             </div>
             <div class="containerKeuangan">
                 <div class="keuangan">

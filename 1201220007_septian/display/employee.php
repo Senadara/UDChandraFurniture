@@ -1,3 +1,6 @@
+<?php
+require_once '../UserAdmin.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,30 +28,30 @@
                 <tr>
                   <th>ID</th>
                   <th>Nama</th>
-                  <th>Posisi</th>
+                  <th>Telepon</th>
                   <th>Gaji</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>John Doe</td>
-                  <td>Manager</td>
-                  <td>$60,000</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jane Smith</td>
-                  <td>Developer</td>
-                  <td>$50,000</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Bob Johnson</td>
-                  <td>Designer</td>
-                  <td>$45,000</td>
-                </tr>
-                <!-- Tambahkan baris sesuai dengan data karyawan yang Anda miliki -->
+              <?php
+              $employee = new UserAdmin();
+              $data = $employee->tampilEmployee();
+              if ($data){
+              foreach($data as $d): 
+              ?>
+              <tr>
+                  <td><?=$d ['idEmployee']?></td>
+                  <td><?=$d ['nama']?></td>
+                  <td><?=$d ['telp']?></td>
+                  <td>Rp. <?=$d ['salary']?></td>
+              </tr>
+
+              <?php 
+              endforeach;
+              }else{
+                echo "error brooo";
+              }
+              ?>
               </tbody>
             </table>
           </div>

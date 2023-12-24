@@ -31,7 +31,7 @@
                 <input type="password" placeholder="***" id="password" name="password"><hr><br>
                 <input type="submit" value="Log In" id="login" name="login">
             </form>
-            <p>Belum punya akun ? <a class="daftar" href="register.html">Daftar Sekarang</a></p>
+            <p>Belum punya akun ? <a class="daftar" href="register.php">Daftar Sekarang</a></p>
         </div>
         <div class="content2">
             <img src="asset/login/Saly-12.svg" alt="">

@@ -32,6 +32,14 @@ align-items: center;
     justify-content: space-evenly;
     padding: 10px;
 }
+.btnPage{
+    background-color: #4fbdb9b2;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.btnPage:hover{
+    background-color: #4FBDBA;
+}
 .containerKeuangan{
     display: flex;
     height: max-content;
