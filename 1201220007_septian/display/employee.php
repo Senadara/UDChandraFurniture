@@ -12,6 +12,7 @@ require_once '../UserAdmin.php';
 <body>
     <!-- SIDEBAR -->
     <?php
+    include('authentication.php');
     include('sidebar.html')
     ?>
     <!-- SIDEBAR END -->
@@ -33,10 +34,11 @@ require_once '../UserAdmin.php';
                 </tr>
               </thead>
               <tbody>
+
+              <!-- perulangan untuk tabel employee -->
               <?php
               $employee = new UserAdmin();
               $data = $employee->tampilEmployee();
-              if ($data){
               foreach($data as $d): 
               ?>
               <tr>
@@ -45,13 +47,10 @@ require_once '../UserAdmin.php';
                   <td><?=$d ['telp']?></td>
                   <td>Rp. <?=$d ['salary']?></td>
               </tr>
-
               <?php 
               endforeach;
-              }else{
-                echo "error brooo";
-              }
               ?>
+
               </tbody>
             </table>
           </div>

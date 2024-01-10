@@ -11,7 +11,7 @@ if(@$_POST['login'] != null){
        if($data != null){
         session_start();
         $_SESSION['Nama']= $data['nama'];
-        // $role = $data['']
+        $_SESSION['idUser'] = $data['idRole'];
 
         header('Location:./display/dashboard.php');
        }else{

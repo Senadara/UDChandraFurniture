@@ -10,11 +10,7 @@
     <body>
         <!-- SIDEBAR -->
         <?php
-        session_start();
-        if (!isset($_SESSION['Nama']) || $_SESSION['Nama'] == null) {
-            header('Location: ../login.php?pesan= anda belum login');
-            exit();
-        }
+        include('authentication.php');
         include('sidebar.html');
         ?>
         <!-- SIDEBAR END -->       

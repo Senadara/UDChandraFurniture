@@ -1,0 +1,217 @@
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* WAREHOUSE */
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page a {
+    margin: 10px 50px 0;
+    padding: 10px 20px;
+    background-color: rgb(228, 132, 7);
+    border-radius: 10px;
+}
+
+.header h1,
+.header p {
+    color: #4fbdba;
+}
+
+/* MAIN */
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+}
+
+.tableBarangContainer {
+    width: 40%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0;
+}
+
+#searchBarangJadi {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+}
+
+.bahanJadi {
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+    height: 278px;
+    overflow-y: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead {
+    background-color: rgb(68, 207, 203);
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table tr {
+    border-bottom: 2px solid rgba(223, 223, 223, 0.267);
+}
+
+tbody tr:hover {
+    background-color: #363a72;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.form-container h3{
+    margin: 10px;
+}
+.cardBoarder {
+    background-color: rgba(100, 100, 100, 0.267);
+    padding: 30px;
+    display: flex;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.formCard {
+    width: 500px;
+    background-color: #0d63a5;
+    padding: 10px 20px 20px;
+    border-radius: 10px;
+    height: 250px;
+}
+
+input {
+    color: black;
+}
+
+.btnForm {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    padding: 5px 8px;
+    background-color: rgb(228, 132, 7);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS untuk popup form */
+.formPopup {
+    width: 500px;
+    background-color: #0d63a5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formBahanJadi {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+}
+
+#formBahanJadi input,
+#formBahanJadi button {
+    margin-bottom: 10px;
+}
+
+.btnPopup {
+    display: flex;
+}
+
+/* tableKerajang */
+.containerKeranjang {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.title2{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+}
+
+.backgroundTable{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.281);
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.tableKeranjang {
+    width: 100%;    
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tableKeranjang thead tr {
+    background-color: #4fbdba;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+.tableKeranjang tbody tr {
+    border-bottom: 2px solid rgba(223, 223, 223, 0.267);
+}
+
+th,
+td {
+    padding: 10px;
+}

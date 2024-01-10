@@ -9,6 +9,7 @@
     <body>
         <!-- SIDEBAR -->
         <?php
+        include('authentication.php');
         include('sidebar.html')
         ?>
         <!-- SIDEBAR END -->
@@ -19,7 +20,7 @@
             </div>
             <div class="menuLogbook">
                 <h5><a class="btnPage" href="#">INCOME</a></h5>
-                <h5><a class="btnPage" href="logBookOutcome.php">OUTCOME</a></h5>
+                <h5><a class="btnPage"` href="logBookOutcome.php">OUTCOME</a></h5>
             </div>
             <div class="containerKeuangan">
                 <div class="keuangan">

@@ -9,6 +9,7 @@
     <body>
         <!-- SIDEBAR -->
         <?php
+        include('authentication.php');
         include('sidebar.html')
         ?>
         <!-- SIDEBAR END -->

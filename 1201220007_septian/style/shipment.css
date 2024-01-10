@@ -1,13 +1,136 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+
 /* WAREHOUSE */
 .header{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+main{
+    width: 100%;
+}
+
+.page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page a{
+    margin: 10px 50px 0;
+    padding: 10px 20px;
+    background-color: rgb(228, 132, 7);
+    border-radius: 10px;
+}
+
+.header h1, .header p{
+  color: #4FBDBA;
+}
+
+/* TABLE */
+.tableContainer{
+    width: 100%;
+ 
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.tableHistori{
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tableHistori thead tr{
+    background-color: #4FBDBA;
+}
+
+.tableHistori tbody td{
+    background-color: rgba(100, 100, 100, 0.267);
+}
+
+thead{
+    position: sticky;
+    top: 0;
+}
+
+th, td{
+    padding: 10px;
+}
+
+
+.form-container{
+    display: flex;
+    width: 97%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cardBoarder{
+    background-color: rgba(100, 100, 100, 0.267);
+    padding: 30px;
+    display: flex;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.formCard{
+    width: 500px;
+    background-color: #0D63A5;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+input{
+    color: black;
+}
+
+.btnForm{
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    padding: 5px 8px;
+    background-color: rgb(228, 132, 7);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group{
     display: flex;
     flex-direction: column;
-background-color: white;
-width: 100%;
-height: 200px;
-justify-content: center;
-text-align: center;
 }
-.header h1, .header p{
-    color: #4FBDBA;
+
+/* table detail */
+.cardTableDetail{
+    flex-grow: 1;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.tableDetail{
+    background-color: white;
+    text-align: center;
+    width: 85%;
+    margin-left: 10%;
+    border-collapse: collapse;
+}
+
+.tableDetail thead{
+    background-color: #4FBDBA;
+}
+
+.tableDetail td{
+    color: black;
 }
