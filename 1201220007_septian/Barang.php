@@ -23,14 +23,14 @@ function __construct($idBarang =null, $nama =null, $stok =null, $satuan =null, $
 }
 
 function tampilBarang(){
-    $sql = "SELECT * FROM barang";
+    $sql = "SELECT * FROM barang WHERE `status` = 'active'";
     $statement = $this->database->db->query($sql);
     $data = $statement->fetchAll(PDO::FETCH_ASSOC);   
     return $data;
 }
 
 function tampilBarangOnce($id){
-    $sql = "SELECT * FROM barang WHERE idBarang = :id";
+    $sql = "SELECT * FROM barang WHERE idBarang = :id AND `status` = 'active'";
     $statement = $this->database->db->prepare($sql);
     $statement->bindParam(':id', $id, PDO::PARAM_INT);
     $statement->execute();
@@ -39,7 +39,8 @@ function tampilBarangOnce($id){
 }
 
 function hapusBarang($id){
-    $sql = "DELETE FROM barang WHERE idBarang = :id";
+    // $sql = "DELETE FROM barang WHERE idBarang = :id ";
+    $sql = "UPDATE `barang` SET `status` = 'nonactive' WHERE `barang`.`idBarang` = :id;";
     $statement = $this->database->db->prepare($sql);
     $statement->bindParam(':id', $id, PDO::PARAM_INT);
     return $statement->execute();

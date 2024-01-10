@@ -5,9 +5,6 @@
         $id = @$_GET['id'];
         $barang = new Barang();
         $dataOnce = $barang -> hapusBarang($id);
-        echo $dataOnce;
-        echo $dataOnce;
-        echo $dataOnce;
         if($dataOnce){
             header('Location:display/warehouse.php?pesan= Berhasil Hapus Barang');
         }

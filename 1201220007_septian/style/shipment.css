@@ -24,15 +24,48 @@ main{
 }
 
 .page a{
-    margin: 10px 50px 0;
+    margin: 20px 50px 0;
     padding: 10px 20px;
     background-color: rgb(228, 132, 7);
     border-radius: 10px;
 }
 
+.page a:hover{
+    cursor: pointer;
+    background-color: #0D63A5;
+    transition: 0.5 ease-in-out;
+}
+
 .header h1, .header p{
   color: #4FBDBA;
 }
+
+hr {
+    border: 1px solid #ffffff85; /* Ketebalan garis */
+    margin: 20px 0; /* Jarak atas dan bawah */
+    width: 90%; /* Panjang hr */
+    margin-left: 5%;
+}
+
+/* title */
+.title{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title form{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.gap{
+    margin-left: 30px;
+}
+
 
 /* TABLE */
 .tableContainer{
@@ -41,12 +74,19 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+
+}
+
+.backgroundTabel{
+    width: 80%;
+    background-color: rgba(100, 100, 100, 0.267);
     height: 350px;
     overflow-y: scroll;
+    border-radius: 10px;
 }
 
 .tableHistori{
-    width: 90%;
+    width: 100%;
     text-align: center;
     border-collapse: collapse;
 }
@@ -55,8 +95,8 @@ main{
     background-color: #4FBDBA;
 }
 
-.tableHistori tbody td{
-    background-color: rgba(100, 100, 100, 0.267);
+tr{
+    border-bottom: 2px solid rgba(223, 223, 223, 0.267);;
 }
 
 thead{
@@ -119,6 +159,10 @@ input{
     overflow-y: scroll;
 }
 
+.backgroundTabel{
+    display: flex;
+}
+
 .tableDetail{
     background-color: white;
     text-align: center;
@@ -133,4 +177,18 @@ input{
 
 .tableDetail td{
     color: black;
+}
+
+.btnSubmit{
+    padding: 5px 15px;
+    background-color: #0D63A5;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.btnSubmit:hover{
+    cursor: pointer;
+    background-color: #ffab2d;
+    transition: 0.5 ease-in-out;
 }

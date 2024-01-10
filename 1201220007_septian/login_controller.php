@@ -25,6 +25,8 @@ if(@$_POST['login'] != null){
     $data = new UserAdmin(null, $_POST['nama'], $_POST['account'], $_POST['password'], $_POST['telepon']);
     if($data->regis()){
         header('Location: register.php?pesan= Register berhasil');
+    }else{
+        echo "error";
     }
 }
 

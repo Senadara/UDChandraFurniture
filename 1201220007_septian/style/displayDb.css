@@ -142,7 +142,9 @@ main{
 .location img{
     padding-right: 10px;
 }
-
+input{
+    color: black;
+}
     /* Shipment */
 
 .shipment{
@@ -158,11 +160,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
 }
-.headShip select{
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-}
+
 .date{
     display: flex;
     padding: 10px;
@@ -203,7 +201,7 @@ main{
 }
 .headDtl button a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .tableDtl{
     width: 100%;

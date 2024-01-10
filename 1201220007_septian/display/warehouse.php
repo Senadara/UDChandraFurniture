@@ -63,7 +63,7 @@
                                     <td><?=$d ['stok'].' '.$d ['satuan'] ?></td>
                                     <td>
                                         <button class="btnEdit"><a href="warehouse.php?status=edit&id=<?=$d ['idBarang']?>">Edit</a></button>
-                                        <button class="btnHapus"><a href="../controller.php?status=hapus&id=<?=$d ['idBarang']?>">Hapus</a></button>
+                                        <button class="btnHapus"><a href="../barang_controller.php?status=hapus&id=<?=$d ['idBarang']?>">Hapus</a></button>
                                     </td>
                                 </tr>
 
@@ -98,7 +98,8 @@
                                     <th><?=$d ['nama'] ?></th>
                                     <td><?=$d ['stok'].' '.$d ['satuan'] ?></td>
                                     <td>Rp. <?=$d ['harga']?></td>
-                                    <td><button class="btnEdit" ><a href="warehouse.php?status=edit&id=<?=$d ['idBarang']?>">Edit</a></button><button class="btnHapus"><a href="../controller.php?status=hapus&id=<?=$d ['idBarang']?>">Hapus</a></button></td>
+                                    <td><button class="btnEdit" ><a href="warehouse.php?status=edit&id=<?=$d ['idBarang']?>">Edit</a></button>
+                                    <button class="btnHapus"><a href="../barang_controller.php?status=hapus&id=<?=$d ['idBarang']?>">Hapus</a></button></td>
                                 </tr>
                                 <?php
                                 endif;
@@ -109,7 +110,9 @@
                     </div>
                 </div>
             </div>
+            
             <div class="form-container">
+                <h2>Form Barang</h2>
                 <form class="edit-form" id="formBarang" action="../barang_controller.php" method="POST">
                 <input type="hidden" name="idBarang" value="<?= @$dataOnce['idBarang'] ?>">  
                 <label for="namaBarang">Nama Barang:</label>

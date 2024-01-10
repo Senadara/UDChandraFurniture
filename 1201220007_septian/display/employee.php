@@ -31,6 +31,7 @@ require_once '../UserAdmin.php';
                   <th>Nama</th>
                   <th>Telepon</th>
                   <th>Gaji</th>
+                  <th>Role</th>
                 </tr>
               </thead>
               <tbody>
@@ -46,6 +47,7 @@ require_once '../UserAdmin.php';
                   <td><?=$d ['nama']?></td>
                   <td><?=$d ['telp']?></td>
                   <td>Rp. <?=$d ['salary']?></td>
+                  <td><?=$d['role']?></td>
               </tr>
               <?php 
               endforeach;

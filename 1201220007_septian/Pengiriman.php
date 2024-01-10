@@ -37,6 +37,25 @@ class Pengiriman{
     function getIdShipment(){
         return $this->idShipment;
     }
+
+    function getDataShipment(){
+        $sql = "SELECT * FROM shipment s INNER JOIN role r ON s.idRole = r.idRole INNER JOIN employee e ON e.idEmployee = r.idEmployee;";
+        $statement = $this->database->db->query($sql);
+        $data = $statement->fetchAll(PDO::FETCH_ASSOC);   
+        return $data;
+    }
+
+    function filterShipment($tanggal, $tujuan, $nama){
+        $sql = "SELECT * FROM shipment s INNER JOIN role r ON s.idRole = r.idRole INNER JOIN employee e ON e.idEmployee = r.idEmployee WHERE DATE(s.tanggal)= :tanggal or s.tujuan = :tujuan or e.nama = :nama ;";
+        $statement = $this->database->db->prepare($sql);
+        $statement->bindParam(':tanggal', $tanggal ,PDO::PARAM_STR);
+        $statement->bindParam(':tujuan', $tujuan ,PDO::PARAM_STR);
+        $statement->bindParam(':nama', $nama ,PDO::PARAM_STR);
+        $statement->execute();
+        $data = $statement->fetchAll();
+        return $data;
+    }
+
 }
 
 ?>
