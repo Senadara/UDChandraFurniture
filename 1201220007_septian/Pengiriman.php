@@ -39,7 +39,7 @@ class Pengiriman{
     }
 
     function getDataShipment(){
-        $sql = "SELECT * FROM shipment s INNER JOIN role r ON s.idRole = r.idRole INNER JOIN employee e ON e.idEmployee = r.idEmployee;";
+        $sql = "SELECT * FROM shipment s INNER JOIN role r ON s.idRole = r.idRole INNER JOIN employee e ON e.idEmployee = r.idEmployee ORDER BY s.tanggal DESC ;";
         $statement = $this->database->db->query($sql);
         $data = $statement->fetchAll(PDO::FETCH_ASSOC);   
         return $data;

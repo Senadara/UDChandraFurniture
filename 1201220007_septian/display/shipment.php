@@ -61,7 +61,6 @@
     <a href="#">Histori Shipment</a>
     <a href="shipmentKirim.php">Kirim Barang</a>
 </div>
-<hr>
 
 <div class="title">
 <H2>Histori Pengiriman</H2>

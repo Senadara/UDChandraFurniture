@@ -79,7 +79,7 @@ hr {
 
 .backgroundTabel{
     width: 80%;
-    background-color: rgba(100, 100, 100, 0.267);
+    background-color: rgba(255, 255, 255, 0.281);
     height: 350px;
     overflow-y: scroll;
     border-radius: 10px;
@@ -192,3 +192,4 @@ input{
     background-color: #ffab2d;
     transition: 0.5 ease-in-out;
 }
+

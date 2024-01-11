@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="bottom">
                                     <h1>Good Day, BOS</h1>
-                                    <p>Have a nice Monday!!!</p>
+                                    <p>Have a nice Day!!!</p>
                                 </div>
                             </div>
                             <div class="picture">

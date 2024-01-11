@@ -12,6 +12,7 @@ if(@$_POST['login'] != null){
         session_start();
         $_SESSION['Nama']= $data['nama'];
         $_SESSION['idUser'] = $data['idRole'];
+        $_SESSION['role'] = $data['role'];
 
         header('Location:./display/dashboard.php');
        }else{
@@ -27,6 +28,26 @@ if(@$_POST['login'] != null){
         header('Location: register.php?pesan= Register berhasil');
     }else{
         echo "error";
+    }
+}elseif(@$_POST['editEmployee']!=null){
+
+    $id = $_POST['idEmployee'];
+    $editedNama = $_POST['editedNama'];
+    $editedTelp = $_POST['editedTelp'];
+    $editedEmail = $_POST['editedEmail'];
+    $editedPassword = $_POST['editedPassword'];
+    $editedSalary = $_POST['editedSalary'];
+    $editedStatus = $_POST['editedStatus'];
+    $editedRole = $_POST['editedRole'];
+    var_dump($id);
+
+    $userAdmin = new UserAdmin();
+    $success = $userAdmin->updateEmployee($id, $editedNama, $editedTelp, $editedEmail, $editedPassword, $editedSalary, $editedStatus, $editedRole);
+
+    if($success) {
+       header('Location: ./display/employee.php?pesan=Data employee berhasil diupdate');
+    } else {
+        header('Location: ./display/employee.php?pesan=Gagal mengupdate data employee');
     }
 }
 
