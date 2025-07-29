@@ -49,12 +49,12 @@
                             <div class="card income">
                                 <h3>INCOME</h3>
                                 <br />
-                                <h1>Rp. <?=number_format($keuangan['income']) ?></h1>
+                                <h1>Rp. <?=number_format($keuangan['totalIncome']) ?></h1>
                             </div>
                             <div class="card outcome">
                                 <h3>OUTCOME</h3>
                                 <br />
-                                <h1>Rp. <?=number_format($keuangan['outcome']) ?></h1>
+                                <h1>Rp. <?=number_format($keuangan['totalOutcome']) ?></h1>
                             </div>
                             <div class="card profit">
                                 <h3>PROFIT</h3>

@@ -150,7 +150,7 @@ function tampilDetailBarang($dataDetail)
                 $data = new Logbook();
                 $keuangan = $data->keuangan();
                 ?>
-                <h2>Rp. <?= number_format($keuangan['outcome']) ?></h2>
+                <h2>Rp. <?= number_format($keuangan['totalOutcome']) ?></h2>
             </div>
             <div class="cardFormKeuangan">
                 <h3>FORM</h3>
